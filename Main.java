@@ -7,17 +7,22 @@ public class Main {
  }
 
 
+class Hospital{
+    private String hospitalName;
+    private String address;
 
+    public Hospital(String hospitalName, String address){
+        this.address = address;
+        this.hospitalName = hospitalName;
+    }
 
-class Doctor{
-    private String name;
-    private String specialisation;
+    public String getHospitalName(){
+        return hospitalName;
+    }
 
-    public Doctor(String name, String specialisation){
-        this.name = name;
-        this.specialisation = specialisation;
+    public String getAddress(){
+        return address;
     }
 }
-
 
 
