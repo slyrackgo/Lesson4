@@ -1,26 +1,23 @@
- import java.util.*;
+import java.util.Objects;
 
- public class Main {
+public class Main {
      public static void main(String[] args) {
-        Set<String> hash = new HashSet<>();
-        hash.add("java");
-         hash.add("spring");
-         hash.add("java");
-         hash.add("collections");
-         hash.add("spring");
-         hash.add("oop");
 
-         Set<String> tree = new TreeSet<>(hash);
-
-
-         for(String s : tree){
-             System.out.print(s + " ");
-         }
      }
  }
 
 
 
+
+class Doctor{
+    private String name;
+    private String specialisation;
+
+    public Doctor(String name, String specialisation){
+        this.name = name;
+        this.specialisation = specialisation;
+    }
+}
 
 
 
